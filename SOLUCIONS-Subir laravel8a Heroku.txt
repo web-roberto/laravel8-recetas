@@ -1,0 +1,16 @@
+
+DESPLEGAR LA APLICACION DE LARAVEL A HEROKU
+1.Crear el fichero Procfile donde le decimos la carpeta de arranque de la aplicacion:
+	echo "web: vendor/bin/heroku-php-apache2 public/" > Procfile
+2.Subir a github:
+  git inti, git add ., git commit -m "1st commit",
+3. Crear Aplicacion en Heroku
+	heroku create, este crea un nombre aleatorio a la aplicacion y un enlace https para mi aplicacion.
+4. Generara una clave: php artisan key:generate --show, heroku config:set APP_KEY=<la key generada>
+5. Subir a heroku: git push heroku master (o main si hemos cambiado a branch 'main')
+6. Abrir la aplicacion: heroku open.
+7. Ver el fichero de 'logs' de Heroku.
+
+
+
+App: https://murmuring-brushlands-89176.herokuapp.com/ | https://git.heroku.com/murmuring-brushlands-89176.git
